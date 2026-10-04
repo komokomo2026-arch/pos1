@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Embedded Content</title>
+
+  <!-- Responsive support for mobile, tablet, laptop and desktop -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =========================================================
+       GOOGLE ADSENSE SITE / AUTO ADS CODE
+       PASTE YOUR OFFICIAL GOOGLE ADSENSE CODE HERE
+       ========================================================= -->
+
+  <!-- YOUR ADSENSE SITE CODE HERE -->
+
+  <!-- ========================================================= -->
+
+  <style>
+    /* =========================================================
+       NEW ADSENSE POSITIONING ONLY
+       Existing iframe behavior remains unchanged
+       ========================================================= */
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Top advertisement */
+    #top-ad-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9998;
+      text-align: center;
+      box-sizing: border-box;
+      background: transparent;
+    }
+
+    /* Bottom advertisement */
+    #bottom-ad-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9998;
+      text-align: center;
+      box-sizing: border-box;
+      background: transparent;
+    }
+
+    /* Left advertisement */
+    #left-ad-container {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9998;
+      text-align: center;
+      box-sizing: border-box;
+      background: transparent;
+    }
+
+    /* Right advertisement */
+    #right-ad-container {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9998;
+      text-align: center;
+      box-sizing: border-box;
+      background: transparent;
+    }
+
+    /* Keep advertisements responsive on smaller screens */
+    @media screen and (max-width: 600px) {
+
+      #top-ad-container,
+      #bottom-ad-container {
+        width: 100%;
+        max-width: 100vw;
+        overflow: hidden;
+      }
+
+      /*
+       * Side advertisements are moved away from the sides
+       * on mobile so they cannot overflow or break the screen.
+       */
+      #left-ad-container,
+      #right-ad-container {
+        display: none;
+      }
+    }
+
+    /* Tablet */
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+
+      #left-ad-container,
+      #right-ad-container {
+        max-width: 120px;
+        overflow: hidden;
+      }
+    }
+
+    /* Laptop and large screens */
+    @media screen and (min-width: 1025px) {
+
+      #left-ad-container,
+      #right-ad-container {
+        max-width: 160px;
+        overflow: hidden;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       TOP ADVERTISEMENT
+       PASTE YOUR OFFICIAL TOP ADSENSE AD-UNIT CODE HERE
+       ========================================================= -->
+
+  <div id="top-ad-container">
+
+    <!-- TOP AD CODE HERE -->
+
+  </div>
+
+
+  <!-- =========================================================
+       EXISTING WEBSITE / IFRAME
+       ORIGINAL CODE PRESERVED
+       ========================================================= -->
+
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbwhAlPuXCaPeashoh0amJLQ-_gL6-IzS61JvBFO1S7DGx1WdbRw94BW97YqWT1Y7c1i/exec"
+    width="100%"
+    height="100%"
+    allowfullscreen="true"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+
+
+  <!-- =========================================================
+       LEFT ADVERTISEMENT
+       PASTE YOUR OFFICIAL LEFT ADSENSE AD-UNIT CODE HERE
+       ========================================================= -->
+
+  <div id="left-ad-container">
+
+    <!-- LEFT AD CODE HERE -->
+
+  </div>
+
+
+  <!-- =========================================================
+       RIGHT ADVERTISEMENT
+       PASTE YOUR OFFICIAL RIGHT ADSENSE AD-UNIT CODE HERE
+       ========================================================= -->
+
+  <div id="right-ad-container">
+
+    <!-- RIGHT AD CODE HERE -->
+
+  </div>
+
+
+  <!-- =========================================================
+       BOTTOM ADVERTISEMENT
+       PASTE YOUR OFFICIAL BOTTOM ADSENSE AD-UNIT CODE HERE
+       ========================================================= -->
+
+  <div id="bottom-ad-container">
+
+    <!-- BOTTOM AD CODE HERE -->
+
+  </div>
+
+
+  <!-- =========================================================
+       ORIGINAL FULLSCREEN FUNCTION
+       PRESERVED
+       ========================================================= -->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('iframe')
+        .requestFullscreen()
+        .catch((err) => {
+          console.error('Error attempting to enable full-screen mode:', err.message);
+        });
+    };
+  </script>
+
+</body>
+</html>
+
